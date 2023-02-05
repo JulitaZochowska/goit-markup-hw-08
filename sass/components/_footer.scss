@@ -1,0 +1,101 @@
+footer {
+  height: 252px;
+  width: 100%;
+  padding-top: 60px;
+  background-color: var(--main-color-background);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__first-part {
+    transition-property: underline;
+    transition-duration: 5000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__second-part {
+    padding-left: 70px;
+    fill: var(--main-color-white);
+  }
+  &__third-part {
+    padding-left: 78px;
+  }
+  &__address {
+    color: var(--main-color-white);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+  }
+  &__email {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+  &__email,
+  &__telnr {
+    color: var(--main-color-white-plus);
+    font-size: 14px;
+    line-height: 1.71;
+    cursor: pointer;
+    text-decoration-color: var(--main-color-grey);
+    transition-property: text-decoration-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__email:hover,
+  &__email:focus,
+  &__telnr:hover,
+  &__telnr:focus {
+    text-decoration: underline;
+  }
+  &__name {
+    color: var(--main-color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.17;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+  &__third-part-flexbox {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+.footer-container-content {
+  &__name {
+    display: block;
+    color: var(--main-color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.03rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__input {
+    ::placeholder {
+      line-height: 1.25;
+      letter-spacing: 0.03rem;
+      color: var(--main-color-white-plus);
+    }
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: solid rgba(255, 255, 255, 0.3);
+    background-color: var(--main-color-background);
+    color: var(--main-color-white-plus);
+  }
+}
+
+.button-footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 42px;
+}

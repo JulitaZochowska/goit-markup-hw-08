@@ -1,0 +1,29 @@
+.our-customers {
+  &__content {
+    margin: 94px auto;
+  }
+  &__name {
+    margin-bottom: 50px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    &:hover,
+    &:focus {
+      fill: var(--main-color-blue);
+      border-color: var(--main-color-blue);
+    }
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--main-color-svg);
+    fill: var(--main-color-svg);
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
