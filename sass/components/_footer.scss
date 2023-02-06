@@ -8,6 +8,7 @@ footer {
   }
   @include desktop {
     height: 252px;
+    width: 100%;
   }
 }
 .footer-container {
@@ -24,10 +25,6 @@ footer {
     transition-duration: 5000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
-    @include tablet {
-    }
-    @include desktop {
-    }
   }
   &__second-part {
     fill: var(--main-color-white);
@@ -63,10 +60,6 @@ footer {
   &__email {
     margin-bottom: 8px;
     margin-top: 8px;
-    @include tablet {
-    }
-    @include desktop {
-    }
   }
   &__email,
   &__telnr {
@@ -92,12 +85,6 @@ footer {
     line-height: 1.17;
     margin-bottom: 20px;
     margin-top: 12px;
-    @include tablet {
-      height: 463px;
-    }
-    @include desktop {
-      height: 252px;
-    }
   }
   &__third-part-flexbox {
     text-align: center;
@@ -146,4 +133,12 @@ footer {
 .button-footer {
   margin-top: 20px;
   margin-bottom: 60px;
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 42px;
+  }
 }
