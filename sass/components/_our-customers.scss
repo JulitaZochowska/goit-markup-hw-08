@@ -1,14 +1,32 @@
 .our-customers {
   &__content {
-    margin: 94px auto;
+    margin: 15px 0;
+    @include tablet {
+    }
+    @include desktop {
+      margin: 94px auto;
+    }
   }
   &__name {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    @include tablet {
+    }
+    @include desktop {
+      margin-bottom: 50px;
+    }
   }
   &__list {
     list-style: none;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    justify-content: center;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
   &__item {
     &:hover,
@@ -25,5 +43,6 @@
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: calc((100% - (1 * 30px)) / 2);
   }
 }

@@ -1,10 +1,19 @@
 .team {
-  height: 708px;
   background-color: rgba(245, 244, 250, 1);
-  margin-top: 94px;
-
+  margin-top: 60px;
+  @include tablet {
+  }
+  @include desktop {
+    height: 708px;
+    margin-top: 94px;
+  }
   &__concent {
-    padding-top: 94px;
+    padding-top: 60px;
+    @include tablet {
+    }
+    @include desktop {
+      padding-top: 94px;
+    }
   }
   &__figcaption-content {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
@@ -16,6 +25,7 @@
     border-bottom-left-radius: 4px;
   }
   &__items {
+    text-align: center;
     list-style: none;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: box-shadow;
@@ -24,20 +34,25 @@
   }
   &__list {
     li {
-      text-align: center;
+      margin-top: 30px;
+      font-weight: var(--main-font-weight-1);
     }
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
-    font-weight: var(--main-font-weight-1);
+    @include tablet {
+    }
+    @include desktop {
+      display: flex;
+      gap: 30px;
+      margin-top: 50px;
+    }
   }
-  figcaption {
+  &__figcaption-content {
     line-height: 1.19;
   }
   &__socialmedia-contents-list {
     list-style: none;
     display: flex;
     text-align: center;
+    justify-content: center;
     gap: 10px;
   }
   &__socialmedia-contents-list-second-part {
@@ -68,7 +83,7 @@
     color: var(--main-color-grey);
     line-height: var(--main-line-height-1);
   }
-}
-figure > img {
-  display: block;
+  figure > img {
+    display: block;
+  }
 }

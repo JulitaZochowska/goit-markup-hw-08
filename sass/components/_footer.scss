@@ -1,39 +1,72 @@
 footer {
-  height: 252px;
+  height: 603px;
   width: 100%;
   padding-top: 60px;
   background-color: var(--main-color-background);
+  @include tablet {
+    height: 463px;
+  }
+  @include desktop {
+    height: 252px;
+  }
 }
-
 .footer-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   &__first-part {
     transition-property: underline;
     transition-duration: 5000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
   &__second-part {
-    padding-left: 70px;
     fill: var(--main-color-white);
+    text-align: center;
+    @include tablet {
+      height: 463px;
+    }
+    @include desktop {
+      padding-left: 70px;
+    }
   }
   &__third-part {
-    padding-left: 78px;
+    @include tablet {
+    }
+    @include desktop {
+      padding-left: 78px;
+    }
   }
   &__address {
     color: var(--main-color-white);
     font-size: 14px;
     line-height: 1.71;
     margin-top: 20px;
-    margin-bottom: 9px;
-    text-align: left;
+    margin-bottom: 8px;
     font-style: normal;
     letter-spacing: 0.03rem;
+    @include tablet {
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
   &__email {
-    margin-bottom: 9px;
-    margin-top: 9px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
   &__email,
   &__telnr {
@@ -59,14 +92,31 @@ footer {
     line-height: 1.17;
     margin-bottom: 20px;
     margin-top: 12px;
+    @include tablet {
+      height: 463px;
+    }
+    @include desktop {
+      height: 252px;
+    }
   }
   &__third-part-flexbox {
-    display: flex;
-    align-items: flex-end;
-    gap: 12px;
+    text-align: center;
+    @include tablet {
+      height: 463px;
+    }
+    @include desktop {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
   }
 }
 .footer-container-content {
+  margin-top: 60px;
+  @include tablet {
+  }
+  @include desktop {
+  }
   &__name {
     display: block;
     color: var(--main-color-white);
@@ -94,8 +144,6 @@ footer {
 }
 
 .button-footer {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding-left: 42px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }

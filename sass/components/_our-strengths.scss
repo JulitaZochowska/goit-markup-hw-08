@@ -8,11 +8,16 @@
       color: var(--main-color-grey);
     }
     list-style: none;
-    display: flex;
-    margin-bottom: 30px;
-    margin-top: 94px;
-    gap: 30px;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    @include tablet {
+    }
+    @include desktop {
+      display: flex;
+      gap: 30px;
+      margin-top: 94px;
+      margin-bottom: 94px;
+    }
   }
   &__items {
     h3 {

@@ -1,5 +1,5 @@
 .title {
-  height: 600px;
+  height: 480px;
   width: 100%;
   background-image: linear-gradient(
       to bottom,
@@ -13,6 +13,12 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--main-color-background);
+  @include tablet {
+  }
+  @include desktop {
+    height: 600px;
+  }
+
   &__content {
     padding-top: 200px;
     padding-bottom: 200px;
