@@ -3,6 +3,7 @@
     margin: 15px 15px;
     @include tablet {
     }
+    margin: 60px 15px;
     @include desktop {
       margin: 94px auto;
     }
@@ -10,8 +11,6 @@
   &__name {
     margin-bottom: 30px;
     margin-top: 60px;
-    @include tablet {
-    }
     @include desktop {
       margin-bottom: 50px;
     }
@@ -24,8 +23,10 @@
     margin-bottom: 60px;
     justify-content: center;
     @include tablet {
+      margin-bottom: 30px;
     }
     @include desktop {
+      flex-wrap: nowrap;
     }
   }
   &__item {
@@ -44,5 +45,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     flex-basis: calc((100% - (1 * 30px)) / 2);
+    @include tablet {
+      flex-basis: calc((100% - (2 * 30px)) / 3);
+    }
+    @include desktop {
+      flex-basis: calc((100% - (4 * 30px)) / 6);
+    }
   }
 }

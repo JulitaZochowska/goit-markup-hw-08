@@ -14,6 +14,9 @@ footer {
 .footer-container {
   display: block;
   @include tablet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   @include desktop {
     display: flex;
@@ -38,6 +41,7 @@ footer {
   }
   &__third-part {
     @include tablet {
+      display: block;
     }
     @include desktop {
       padding-left: 78px;

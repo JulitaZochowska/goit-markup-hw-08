@@ -12,11 +12,11 @@
     margin-top: 60px;
     margin-left: 15px;
     width: 100%;
+    display: flex;
+    gap: 30px;
     @include tablet {
     }
     @include desktop {
-      display: flex;
-      gap: 30px;
       margin-top: 94px;
       margin-bottom: 94px;
     }
