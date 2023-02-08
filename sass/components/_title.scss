@@ -20,9 +20,14 @@
   }
 
   &__content {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
+    @include desktop {
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
   &__button {
     background-color: var(--main-color-blue);

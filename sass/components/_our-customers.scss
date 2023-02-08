@@ -30,11 +30,7 @@
     }
   }
   &__item {
-    &:hover,
-    &:focus {
-      fill: var(--main-color-blue);
-      border-color: var(--main-color-blue);
-    }
+    flex-basis: calc((100% - (1 * 30px)) / 2);
     width: 170px;
     height: 92px;
     border: 1px solid var(--main-color-svg);
@@ -44,12 +40,16 @@
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    flex-basis: calc((100% - (1 * 30px)) / 2);
     @include tablet {
       flex-basis: calc((100% - (2 * 30px)) / 3);
     }
     @include desktop {
       flex-basis: calc((100% - (4 * 30px)) / 6);
+    }
+    &:hover,
+    &:focus {
+      fill: var(--main-color-blue);
+      border-color: var(--main-color-blue);
     }
   }
 }

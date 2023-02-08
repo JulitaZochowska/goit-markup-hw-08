@@ -5,13 +5,28 @@
   padding-top: 32px;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+  @include tablet {
+  }
+  @include desktop {
+  }
   &__list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
   &__item-2 {
+    visibility: hidden;
+    @include tablet {
+      visibility: visible;
+    }
+    @include desktop {
+      visibility: visible;
+    }
     &__gallery {
       font-size: 14px;
       line-height: 1.14;
@@ -43,6 +58,13 @@
     position: relative;
   }
   &__item {
+    visibility: hidden;
+    @include tablet {
+      visibility: visible;
+    }
+    @include desktop {
+      visibility: visible;
+    }
     &__gallery {
       &:hover,
       &:focus {
@@ -62,14 +84,21 @@
       transition-property: color, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &--changed-margin {
-        margin-right: 0;
-      }
+    }
+    &--changed-margin {
+      margin-right: 0;
     }
   }
 }
 
 .page-header-second-part {
+  visibility: hidden;
+  @include tablet {
+    visibility: visible;
+  }
+  @include desktop {
+    visibility: visible;
+  }
   display: flex;
   justify-content: flex-end;
   &__icon-envelope {

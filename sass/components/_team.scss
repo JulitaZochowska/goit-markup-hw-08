@@ -9,8 +9,10 @@
   }
   &__concent {
     padding-top: 60px;
+    padding-bottom: 60px;
     @include desktop {
       padding-top: 94px;
+      padding-bottom: 94px;
     }
   }
   &__figcaption-content {
@@ -23,6 +25,13 @@
     border-bottom-left-radius: 4px;
   }
   &__items {
+    &__picture {
+      flex-basis: 100%;
+      @include tablet {
+      }
+      @include desktop {
+      }
+    }
     text-align: center;
     list-style: none;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -37,9 +46,10 @@
     }
   }
   &__list {
-    margin-top: 30px;
     font-weight: var(--main-font-weight-1);
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 30px;
     margin-top: 50px;
@@ -48,6 +58,7 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
+      flex-basis: 100%;
     }
     @include desktop {
       margin-top: 50px;

@@ -8,18 +8,28 @@ body {
   margin: 0;
 }
 .container {
-  max-width: 1200px;
-  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 h1 {
   color: var(--main-color-white);
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
+
 h2 {
   font-size: 36px;
   line-height: 1.17;

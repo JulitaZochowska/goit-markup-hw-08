@@ -1,8 +1,13 @@
 .services {
+  display: none;
+  @include desktop {
+    display: contents;
+  }
   &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
+    width: 1600px;
   }
   &__item {
     list-style: none;
