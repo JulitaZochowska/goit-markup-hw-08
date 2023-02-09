@@ -1,20 +1,22 @@
 .team {
   background-color: rgba(245, 244, 250, 1);
   margin-top: 60px;
-  @include tablet {
-  }
+
   @include desktop {
     height: 708px;
     margin-top: 94px;
   }
+
   &__concent {
     padding-top: 60px;
     padding-bottom: 60px;
+
     @include desktop {
       padding-top: 94px;
       padding-bottom: 94px;
     }
   }
+
   &__figcaption-content {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     border-left: 1px solid rgba(255, 255, 255, 1);
@@ -24,27 +26,26 @@
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
+
   &__items {
-    &__picture {
-      flex-basis: 100%;
-      @include tablet {
-      }
-      @include desktop {
-      }
-    }
+    max-width: 450px;
     text-align: center;
     list-style: none;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @include tablet {
       flex-basis: calc((100% - (1 * 30px)) / 2);
+      max-width: 354px;
     }
+
     @include desktop {
-      margin-top: 50px;
+      max-width: 270px;
     }
   }
+
   &__list {
     font-weight: var(--main-font-weight-1);
     display: flex;
@@ -52,23 +53,25 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: 30px;
+
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
       flex-basis: 100%;
     }
+
     @include desktop {
       margin-top: 50px;
       flex-wrap: nowrap;
       flex-direction: row;
     }
+
     &__figcaption-content {
       line-height: 1.19;
     }
   }
+
   &__socialmedia-contents-list {
     list-style: none;
     display: flex;
@@ -76,15 +79,19 @@
     justify-content: center;
     gap: 10px;
   }
+
   &__socialmedia-contents-list-second-part {
     margin: 16px 32px 24px 32px;
+
     @include tablet {
       margin: 16px 32px 24px 32px;
     }
+
     @include desktop {
       margin: 16px 32px 30px 32px;
     }
   }
+
   &__socialmedia-content {
     fill: var(--main-color-svg);
     cursor: pointer;
@@ -96,21 +103,34 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__socialmedia-content:hover,
   &__socialmedia-content:focus {
     fill: var(--main-color-white);
     background-color: var(--main-color-blue);
   }
+
   &__desciption-first-part {
     margin-bottom: 10px;
     padding-top: 30px;
     font-weight: var(--main-font-weight-1);
   }
+
   &__desciption-second-part {
     color: var(--main-color-grey);
     line-height: var(--main-line-height-1);
   }
-}
-figure > img {
-  display: block;
+
+  &__image {
+    display: block;
+    max-height: 460px;
+
+    @include tablet {
+      max-height: 374px;
+    }
+
+    @include desktop {
+      max-height: 260px;
+    }
+  }
 }

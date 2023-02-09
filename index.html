@@ -169,30 +169,59 @@
           <h2>Czym się zajmujemy</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                src="images/box-image-1.jpg"
-                alt="mężczyzna programuje uzywajac dwoch monitorów"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/service/desktop/1x/box-image-1.jpg,
+                    images/service/desktop/2x/box-image-1.jpg 2x
+                  "
+                />
+
+                <img
+                  src="images/service/desktop/1x/box-image-1.jpg"
+                  alt="mężczyzna programuje uzywajac dwoch monitorów"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="services__description">aplikacje komputerowe</p>
             </li>
             <li class="services__item">
-              <img
-                src="images/box-image-2.jpg"
-                alt="mezczyzna trzyma komorke w lewej dloni i na monitorze wyswitlaja sie trzy telefony komorkowe"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/service/desktop/1x/box-image-2.jpg,
+                    images/service/desktop/2x/box-image-2.jpg 2x
+                  "
+                />
+
+                <img
+                  src="images/service/desktop/1x/box-image-2.jpg"
+                  alt="mezczyzna trzyma komorke w lewej dloni i na monitorze wyswitlaja sie trzy telefony komorkowe"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="services__description">aplikacje mobilne</p>
             </li>
             <li class="services__item">
-              <img
-                src="images/box-image-3.jpg"
-                alt="wyswitlona na tablecie skala kolorow"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/service/desktop/1x/box-image-3.jpg,
+                    images/service/desktop/2x/box-image-3.jpg 2x
+                  "
+                />
+
+                <img
+                  src="images/service/desktop/1x/box-image-3.jpg"
+                  alt="wyswitlona na tablecie skala kolorow"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="services__description">rozwiązania graficzne</p>
             </li>
           </ul>
@@ -204,12 +233,32 @@
           <ul class="team__list">
             <li class="team__items">
               <figure>
-                <img
-                  src="images/team-card-image-1.jpg"
-                  alt="mezczyzna w okularach usmiecha sie"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__image">
+                  <source
+                    media="screen and (min-width: 1200px)"
+                    srcset="
+                      images/team/desktop/1x/team-card-image-1.jpg,
+                      images/team/desktop/2x/team-card-image-1.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and (min-width: 768px)"
+                    srcset="
+                      images/team/tablet/1x/team-card-image-1.jpg,
+                      images/team/tablet/2x/team-card-image-1.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/team/mobile/1x/team-card-image-1.jpg,
+                      images/team/mobile/2x/team-card-image-1.jpg 2x
+                    "
+                  />
+                  <img
+                    src="images/team/mobile/1x/team-card-image-1.jpg"
+                    alt="mezczyzna w okularach usmiecha sie"
+                  />
+                </picture>
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Product Designer</p>
@@ -250,12 +299,32 @@
             </li>
             <li class="team__items">
               <figure>
-                <img
-                  src="images/team-card-image-2.jpg"
-                  alt="kobieta z blond włosami w okularach usmiecha sie"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__image">
+                  <source
+                    media="screen and (min-width: 1200px)"
+                    srcset="
+                      images/team/desktop/1x/team-card-image-2.jpg,
+                      images/team/desktop/2x/team-card-image-2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and (min-width: 768px)"
+                    srcset="
+                      images/team/tablet/1x/team-card-image-2.jpg,
+                      images/team/tablet/2x/team-card-image-2.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/team/mobile/1x/team-card-image-2.jpg,
+                      images/team/mobile/2x/team-card-image-2.jpg 2x
+                    "
+                  />
+                  <img
+                    src="images/team/mobile/1x/team-card-image-2.jpg"
+                    alt="kobieta z blond włosami w okularach usmiecha sie"
+                  />
+                </picture>
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Frontend Developer</p>
@@ -296,12 +365,32 @@
             </li>
             <li class="team__items">
               <figure>
-                <img
-                  src="images/team-card-image-3.jpg"
-                  alt="mezczyzna w niebieskiej koszuli usmiecha sie"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__image">
+                  <source
+                    media="screen and (min-width: 1200px)"
+                    srcset="
+                      images/team/desktop/1x/team-card-image-3.jpg,
+                      images/team/desktop/2x/team-card-image-3.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and (min-width: 768px)"
+                    srcset="
+                      images/team/tablet/1x/team-card-image-3.jpg,
+                      images/team/tablet/2x/team-card-image-3.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/team/mobile/1x/team-card-image-3.jpg,
+                      images/team/mobile/2x/team-card-image-3.jpg 2x
+                    "
+                  />
+                  <img
+                    src="images/team/mobile/1x/team-card-image-3.jpg"
+                    alt="mezczyzna w niebieskiej koszuli usmiecha sie"
+                  />
+                </picture>
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">Marketing</p>
@@ -342,12 +431,32 @@
             </li>
             <li class="team__items">
               <figure>
-                <img
-                  src="images/team-card-image-4.jpg"
-                  alt="mezczyzna w okularach usmiecha sie"
-                  width="270"
-                  height="260"
-                />
+                <picture class="team__image">
+                  <source
+                    media="screen and (min-width: 1200px)"
+                    srcset="
+                      images/team/desktop/1x/team-card-image-4.jpg,
+                      images/team/desktop/2x/team-card-image-4.jpg 2x
+                    "
+                  />
+                  <source
+                    media="screen and (min-width: 768px)"
+                    srcset="
+                      images/team/tablet/1x/team-card-image-4.jpg,
+                      images/team/tablet/2x/team-card-image-4.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      images/team/mobile/1x/team-card-image-4.jpg,
+                      images/team/mobile/2x/team-card-image-4.jpg 2x
+                    "
+                  />
+                  <img
+                    src="images/team/mobile/1x/team-card-image-4.jpg"
+                    alt="mezczyzna w okularach usmiecha sie"
+                  />
+                </picture>
                 <figcaption class="team__figcaption-content">
                   <p class="team__desciption-first-part">John Doe</p>
                   <p class="team__desciption-second-part">UI Designer</p>
@@ -568,7 +677,7 @@
               class="modal-window-content__description"
               for="textarea-textarea-id"
               >Komentarz</label
-            >
+            ><br />
             <textarea
               id="textarea-textarea-id"
               name="feedback"
@@ -597,58 +706,59 @@
                   href="politykaprywatnosci"
                   >Politykę Prywatności.</a
                 ></label
+              ><br />
+              <button
+                type="submit"
+                class="button-footer-modal-window button-modal-window"
               >
+                Wyślij
+              </button>
             </div>
-            <button
-              type="submit"
-              class="button-footer-modal-window button-modal-window"
-            >
-              Wyślij
-            </button>
           </form>
         </div>
       </div>
     </div>
-    <!-- TODO: Ostylować menu poniżej, usunac .is-open -->
-    <div class="menu-container container mobile-menu js-menu-container is-open">
-      <div class="mobile-menu__header">
-        <button class="mobile-menu__close-button js-close-menu">
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#icon-close_2"></use>
-          </svg>
-        </button>
+    <div class="menu-container mobile-menu js-menu-container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_2"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href class="mobile-menu__item__link">Agencja</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href class="mobile-menu__item__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href class="mobile-menu__item__link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="mobile-menu__contacts">
+            <li>
+              <a class="mobile-menu__contacts__tel" href="tel:+48111111111"
+                >+48 111 111 111
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu__contacts__email"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-media__list">
+            <li class="mobile-menu__social-media__item">Instagram</li>
+            <li class="mobile-menu__social-media__item">Twitter</li>
+            <li class="mobile-menu__social-media__item">Facebook</li>
+            <li class="mobile-menu__social-media__item">LinkedIn</li>
+          </ul>
+        </div>
       </div>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a href class="mobile-menu__item__link">Agencja</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href class="mobile-menu__item__link">Portfolio</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href class="mobile-menu__item__link">Kontakt</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__contacts">
-        <li>
-          <a class="mobile-menu__contacts__tel" href="tel:+48111111111"
-            >+48 111 111 111
-          </a>
-        </li>
-        <li>
-          <a
-            class="mobile-menu__contacts__email"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__social-media__list">
-        <li class="mobile-menu__social-media__item">Instagram</li>
-        <li class="mobile-menu__social-media__item">Twitter</li>
-        <li class="mobile-menu__social-media__item">Facebook</li>
-        <li class="mobile-menu__social-media__item">LinkedIn</li>
-      </ul>
     </div>
     <script
       defer
