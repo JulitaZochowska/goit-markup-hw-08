@@ -46,6 +46,11 @@
       width: 170px;
     }
 
+    > svg {
+      max-width: 100%;
+      height: 92px;
+    }
+
     &:hover,
     &:focus {
       fill: var(--main-color-blue);
